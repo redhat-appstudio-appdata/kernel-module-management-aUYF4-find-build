@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: kernel-module-management-must-gather
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: kernel-module-management-must-gather
+    app.kubernetes.io/part-of: kernel-module-management
+  name: kernel-module-management-iaco
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: kernel-module-management-must-gather
+    weight: 100
+status: {}
