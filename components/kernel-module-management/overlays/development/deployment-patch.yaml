@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhn-gps-cprocter-tenant/kernel-module-management/kernel-module-management@sha256:844767fe4a30acdaf7b12724b676bf165736c8f0803377f80fd371c8919c082c
+      - image: quay.io/redhat-user-workloads/rhn-gps-cprocter-tenant/kernel-module-management/kernel-module-management@sha256:104e7589b20e26d802a4194935d2dc9bb4e939fe7633702f6ed09107fb06feb7
         name: container-image
         resources: {}
 status: {}
