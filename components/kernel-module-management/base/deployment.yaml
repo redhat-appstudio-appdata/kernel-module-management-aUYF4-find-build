@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: kernel-module-management
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhn-gps-cprocter-tenant/kernel-module-management/kernel-module-management@sha256:104e7589b20e26d802a4194935d2dc9bb4e939fe7633702f6ed09107fb06feb7
+      - image: quay.io/redhat-user-workloads/rhn-gps-cprocter-tenant/kernel-module-management/kernel-module-management@sha256:13ae94912eae8d627423bab219fd9750092857b5dc374b503322541303d1b38f
         imagePullPolicy: Always
         name: container-image
         ports:
